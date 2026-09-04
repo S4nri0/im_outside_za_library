@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+
+}
+
+h1 {
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+p {
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+button {
+  font-size: 30px;
+  align-items: center;
+  color: red;
+  background-color: aqua;
+  
+}
+
+img {
+  align-items: center;
+}
+
+#float {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+/* Bone Hand - https://www.cursors-4u.com/cursor/bone-hand */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/bone-hand-a5514fe0-64.webp') 16 16, auto !important;
+}
+/* End www.Cursors-4U.com Code */

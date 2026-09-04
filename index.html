@@ -1,1 +1,49 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>I'm outside za library</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>I'm outside za library</h1>
+    <p>Gateway to Free Knowledge <br>
+      When life seems not worth living, ten minutes in a library ...<br>
+      I've spent too long trying to find this place. Professor Zei
+      <br>
+      <br>
+      To: Jay
+      <br>
+      I'm outside za library 😛
+    </p>
+    <div class="picture">
+      <button class="button" id="imgClickandChange">Come with me</button>
+      <div id="float"><img id='picOne' src="library.jpg"></div>
+    </div>
+
+    <script>
+      var counter = 0;
+
+      var sound = new Audio("peter.mp3");
+      sound.preload = "auto";
+
+      document.getElementById("imgClickandChange").onclick = function () {
+        var img = document.getElementById("picOne");
+
+        if (counter == 0) {
+          img.src = "twilighttt.jpg";  
+          counter = 1;
+        } else {
+          img.src = "library.jpg";     
+          counter = 0;
+        }
+
+        sound.currentTime = 0;
+        sound.play();
+      }
+    </script>
+
+    <footer>
+      
+    </footer>
+  </body>
+</html>
