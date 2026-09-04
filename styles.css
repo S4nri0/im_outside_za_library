@@ -1,11 +1,6 @@
 body {
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;   
-  margin: 0;                
+  margin: 0; 
 }
 
 h1 {
@@ -21,29 +16,35 @@ p {
   font-size: 20px;
 }
 
+.picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
 button {
   font-size: 30px;
-  align-items: center;
   color: red;
   background-color: aqua;
-  
+  margin-bottom: 20px; 
 }
 
 img {
-  align-items: center;
+  display: block; 
 }
 
 #float {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
  
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, 15px); }
+  100% { transform: translate(0, -0px); }    
 }
 
 /* Bone Hand - https://www.cursors-4u.com/cursor/bone-hand */
